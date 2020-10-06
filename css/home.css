@@ -1,0 +1,22 @@
+.navbar-brand {
+  width: 300px;
+  height: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-toggler {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+}

@@ -21,7 +21,7 @@
             <div class="navbar-nav">
                 <a class="nav-link active" href="#">Inicio <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="#">Servicios</a>
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="./contacto.php">Contacto</a>
             </div>
         </div>
     </nav>
@@ -53,13 +53,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm m-3">
-                    <h1 class="font-weight-bold">Acrílicos</h1>
+                    <h3 class="font-weight-bold">Dirección</h3>
+                    <p>Pellegrini 2912</p>
                 </div>
                 <div class="col-sm m-3">
-                    <h1 class="font-weight-bold">Policarbonatos</h1>
+                    <h3 class="font-weight-bold">Correo Electrónico</h3>
+                    <a href="mailto:santafeacrilicosrosario@hotmail.com.ar">santafeacrilicosrosario@hotmail.com.ar</a>
                 </div>
                 <div class="col-sm m-3">
-                    <h1 class="font-weight-bold">Alto Impácto</h1>
+                    <h3 class="font-weight-bold">Teléfono</h3>
+                    <a href="tel:+0341-438-9092">(0341) 438 9092</a>
                 </div>
             </div>
         </div>

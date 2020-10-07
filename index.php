@@ -32,19 +32,19 @@
                 <h1 class="font-weight-bold">Acrílicos</h1>
                 <p class="text-break">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolores nisi tempore ullam corrupti minus omnis, laboriosam repellat, voluptate reiciendis sequi aut in sapiente aspernatur. Magni aperiam iste quaerat repellat!</p>
                 <img class="my-auto" src="https://picsum.photos/300/300" alt="picsum">
-                <button class="btn btn-primary w-100 mt-2">Cotizar</button>
+                <button class="btn btn-primary w-100 mt-2" id="cotizarAcrilicos">Cotizar</button>
             </div>
             <div class="col-sm m-3">
                 <h1 class="font-weight-bold">Policarbonatos</h1>
                 <p text-break>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolores nisi tempore ullam corrupti minus omnis, laboriosam repellat, voluptate reiciendis sequi aut in sapiente aspernatur. Magni aperiam iste quaerat repellat!</p>
                 <img class="my-auto" src="https://picsum.photos/300/300" alt="picsum">
-                <button class="btn btn-primary w-100 mt-2">Cotizar</button>
+                <button class="btn btn-primary w-100 mt-2" id="cotizarPolicarbonatos">Cotizar</button>
             </div>
             <div class="col-sm m-3">
                 <h1 class="font-weight-bold">Alto Impácto</h1>
                 <p text-break>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum dolores nisi tempore ullam corrupti minus omnis, laboriosam repellat, voluptate reiciendis sequi aut in sapiente aspernatur. Magni aperiam iste quaerat repellat!</p>
                 <img class="my-auto" src="https://picsum.photos/300/300" alt="picsum">
-                <button class="btn btn-primary w-100 mt-2">Cotizar</button>
+                <button class="btn btn-primary w-100 mt-2" id="cotizarAltoImpacto">Cotizar</button>
             </div>
         </div>
     </div>
@@ -68,6 +68,23 @@
 
 
 
+<script type="text/javascript">
+let botonAcrilicos = document.getElementById("cotizarAcrilicos");
+let botonPolicarbonatos = document.getElementById("cotizarPolicarbonatos");
+let botonAltoImpacto = document.getElementById("cotizarAltoImpacto");
+
+botonAcrilicos.onclick = function() {
+    window.location.href = "cotizarAcrilicosPage.php";
+}
+
+botonPolicarbonatos.onclick = function() {
+    window.location.href = "cotizarPolicarbonatosPage.php";
+}
+
+botonAltoImpacto.onclick = function() {
+    window.location.href = "cotizarAltoImpactoPage.php";
+}
+</script>
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

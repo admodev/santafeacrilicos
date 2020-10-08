@@ -8,14 +8,13 @@ require './databaseConnection.php';
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Santa Fé Acrilicos</title>
+  <title>Santa Fé Acrílicos</title>
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <!-- Estilos -->
 <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <body>
-<form>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img class="navbar-brand" src="./assets/img/Logo.png" alt="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,22 +28,36 @@ require './databaseConnection.php';
             </div>
         </div>
     </nav>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
+  <div class="container mt-5">
+<h2 class="text-center font-weight-bold">Contacto</h2>
+<form>
+<div class="form-group">
+    <label for="exampleInputEmail1">Correo Electrónico</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <label for="nombre">Nombre</label>
+    <input type="text" class="form-control" id="nombre">
+  </div>
+<div class="form-group">
+    <label for="nombre">Empresa</label>
+    <input type="text" class="form-control" id="nombre">
+  </div>
+<div class="form-group">
+    <label for="nombre">Teléfono</label>
+    <input type="text" class="form-control" id="nombre">
+  </div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Mensaje</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <div class="form-group form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <label class="form-check-label" for="exampleCheck1">No soy un robot.</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
-
+</div>
 
 <!-- Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

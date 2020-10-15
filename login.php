@@ -1,3 +1,29 @@
+<?php
+
+require './databaseConnection.php';
+
+if (isset($_POST['login'])) {
+    $username = mysqli_real_escape_string($db, $_POST['username']);
+    $password = mysqli_real_escape_string($db, $_POST['password']);
+
+    if (empty($username)) {
+        die("Ingrese un usuario válido.");
+    }
+
+    if (empty($password)) {
+        die("Por favor ingrese una contraseña válida.");
+    }
+
+    $user_check_query = "SELECT * FROM `admins` WHERE username='$username' AND password='$password' LIMIT 1";
+    $result = mysqli_query($db, $user_check_query);
+    if (mysqli_num_rows($result) == 1) {
+        $_SESSION['username'] = $username;
+        header("Location: ./panel.php");
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

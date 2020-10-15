@@ -1,6 +1,6 @@
 <?php
 
-require('./environmentVariables.php');
+require './environmentVariables.php';
 
 $hostname = $_ENV['HOST'];
 $username = $_ENV['DB_USER'];

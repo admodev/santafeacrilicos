@@ -1,0 +1,10 @@
+.contenedorLogin {
+  max-width: 30%;
+  margin-top: 15%;
+}
+
+@media (max-width: 700px) {
+  .contenedorLogin {
+    max-width: 100%;
+  }
+}
